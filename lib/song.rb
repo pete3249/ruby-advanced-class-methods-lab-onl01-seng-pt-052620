@@ -40,7 +40,9 @@ class Song
   end 
   
   def self.new_from_filename(song_name)
-    
+    new_song = Song.new
+    song_name.split("-")
+    binding.pry
   end 
 
   def self.all
