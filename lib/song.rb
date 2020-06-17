@@ -46,7 +46,12 @@ class Song
     new_song.name = song_array[1].strip[0..song_array[1].strip.length-5]
     new_song
   end 
-
+  
+  def self.create_from_filename(song_name)
+    new_song = new_from_filename(song_name)
+    new_song.save
+  end 
+  
   def self.all
     @@all
   end
