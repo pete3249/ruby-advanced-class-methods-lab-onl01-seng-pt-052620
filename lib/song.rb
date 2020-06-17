@@ -44,6 +44,7 @@ class Song
     song_array = song_name.split("-")
     new_song.artist_name = song_array[0].strip
     new_song.name = song_array[1].strip[0..song_array[1].strip.length-5]
+    new_song
   end 
 
   def self.all
